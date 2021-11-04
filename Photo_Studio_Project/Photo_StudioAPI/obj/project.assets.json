@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ingsi\\Downloads\\Photo_Studio_Project\\Photo_StudioAPI\\Photo_StudioAPI.csproj",
+      "projectUniqueName": "C:\\Users\\ingsi\\Source\\Repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\Photo_StudioAPI\\Photo_StudioAPI.csproj",
       "projectName": "Photo_StudioAPI",
-      "projectPath": "C:\\Users\\ingsi\\Downloads\\Photo_Studio_Project\\Photo_StudioAPI\\Photo_StudioAPI.csproj",
+      "projectPath": "C:\\Users\\ingsi\\Source\\Repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\Photo_StudioAPI\\Photo_StudioAPI.csproj",
       "packagesPath": "C:\\Users\\ingsi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ingsi\\Downloads\\Photo_Studio_Project\\Photo_StudioAPI\\obj\\",
+      "outputPath": "C:\\Users\\ingsi\\Source\\Repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\Photo_StudioAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ingsi\\AppData\\Roaming\\NuGet\\NuGet.Config",
