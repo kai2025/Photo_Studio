@@ -151,3 +151,4 @@ C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\Photo_Stud
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\Photo_StudioAPI\obj\Debug\net5.0\ref\Photo_StudioAPI.dll
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\Photo_StudioAPI\obj\Debug\net5.0\Photo_StudioAPI.pdb
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\Photo_StudioAPI\obj\Debug\net5.0\Photo_StudioAPI.genruntimeconfig.cache
+C:\Users\ingsi\source\repos\kai2025\Photo_Studio\Photo_Studio_Project\Photo_StudioAPI\obj\Debug\net5.0\Photo_StudioAPI.csproj.AssemblyReference.cache
