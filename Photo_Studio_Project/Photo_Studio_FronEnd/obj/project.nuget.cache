@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dxAeNwjLw68O0/Y6hvA62BAZaactgwNO8M6lkb7OA+/DoBao0XnCGDk0JF9nI5J9N5SU6g/c9Y5HnyfS6eYkhA==",
+  "dgSpecHash": "Sm9v+y2CUyzImJkr92bJGp/6QzKcMdMQCLVxC6oeJiVci5OzK+CJwJFXCoGf4H+HVl1Xl9oyikkiN6trjlRevQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj",
+  "projectFilePath": "C:\\Users\\Jose Antonio\\source\\repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jose Antonio\\.nuget\\packages\\microsoft.aspnetcore.nodeservices\\3.0.0\\microsoft.aspnetcore.nodeservices.3.0.0.nupkg.sha512",
     "C:\\Users\\Jose Antonio\\.nuget\\packages\\microsoft.aspnetcore.spaservices\\3.0.0\\microsoft.aspnetcore.spaservices.3.0.0.nupkg.sha512",

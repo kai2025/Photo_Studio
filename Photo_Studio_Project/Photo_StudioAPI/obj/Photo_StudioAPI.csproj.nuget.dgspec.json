@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_StudioAPI\\Photo_StudioAPI.csproj": {}
+    "C:\\Users\\Jose Antonio\\source\\repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_StudioAPI\\Photo_StudioAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_StudioAPI\\Photo_StudioAPI.csproj": {
+    "C:\\Users\\Jose Antonio\\source\\repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_StudioAPI\\Photo_StudioAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_StudioAPI\\Photo_StudioAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Jose Antonio\\source\\repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_StudioAPI\\Photo_StudioAPI.csproj",
         "projectName": "Photo_StudioAPI",
-        "projectPath": "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_StudioAPI\\Photo_StudioAPI.csproj",
+        "projectPath": "C:\\Users\\Jose Antonio\\source\\repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_StudioAPI\\Photo_StudioAPI.csproj",
         "packagesPath": "C:\\Users\\Jose Antonio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_StudioAPI\\obj\\",
+        "outputPath": "C:\\Users\\Jose Antonio\\source\\repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_StudioAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jose Antonio\\AppData\\Roaming\\NuGet\\NuGet.Config",

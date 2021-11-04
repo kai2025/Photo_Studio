@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj": {}
+    "C:\\Users\\Jose Antonio\\source\\repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj": {
+    "C:\\Users\\Jose Antonio\\source\\repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj",
+        "projectUniqueName": "C:\\Users\\Jose Antonio\\source\\repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj",
         "projectName": "Photo_Studio_FronEnd",
-        "projectPath": "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj",
+        "projectPath": "C:\\Users\\Jose Antonio\\source\\repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj",
         "packagesPath": "C:\\Users\\Jose Antonio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\obj\\",
+        "outputPath": "C:\\Users\\Jose Antonio\\source\\repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jose Antonio\\AppData\\Roaming\\NuGet\\NuGet.Config",
