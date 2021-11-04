@@ -237,6 +237,27 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "System.Net.Http.Json/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Net.Http.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Net.Http.Json.dll": {}
+        }
+      },
+      "System.Text.Json/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+        }
+      },
       "VueCliMiddleware/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -543,6 +564,50 @@
         "newtonsoft.json.nuspec"
       ]
     },
+    "System.Net.Http.Json/5.0.0": {
+      "sha512": "3CPSQpCzEmI9o+1G79TnPCjF40omCdnoXj2Rg76BDwGj5+LZnFPjV+t35eedlvl+uthmholk/XXxXTYgJWSexw==",
+      "type": "package",
+      "path": "system.net.http.json/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Net.Http.Json.dll",
+        "lib/net461/System.Net.Http.Json.xml",
+        "lib/net5.0/System.Net.Http.Json.dll",
+        "lib/net5.0/System.Net.Http.Json.xml",
+        "lib/netstandard2.0/System.Net.Http.Json.dll",
+        "lib/netstandard2.0/System.Net.Http.Json.xml",
+        "system.net.http.json.5.0.0.nupkg.sha512",
+        "system.net.http.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Text.Json/5.0.0": {
+      "sha512": "+luxMQNZ2WqeffBU7Ml6njIvxc8169NW2oU+ygNudXQGZiarjE7DOtN7bILiQjTZjkmwwRZGTtLzmdrSI/Ustw==",
+      "type": "package",
+      "path": "system.text.json/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Json.dll",
+        "lib/net461/System.Text.Json.xml",
+        "lib/netcoreapp3.0/System.Text.Json.dll",
+        "lib/netcoreapp3.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.5.0.0.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "VueCliMiddleware/3.0.0": {
       "sha512": "CyOePqGd5d720kXF58POVN6Viz+c1QYq31nTVUZ3QI57t38qMioPK3AfEUygbpAELQYEtMsziBwFmYiAb4OEcA==",
       "type": "package",
@@ -559,23 +624,24 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "System.Net.Http.Json >= 5.0.0",
       "VueCliMiddleware >= 3.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jose Antonio\\.nuget\\packages\\": {}
+    "C:\\Users\\ingsi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj",
+      "projectUniqueName": "C:\\Users\\ingsi\\Source\\Repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj",
       "projectName": "Photo_Studio_FronEnd",
-      "projectPath": "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj",
-      "packagesPath": "C:\\Users\\Jose Antonio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\obj\\",
+      "projectPath": "C:\\Users\\ingsi\\Source\\Repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj",
+      "packagesPath": "C:\\Users\\ingsi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ingsi\\Source\\Repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\Photo_Studio_FronEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jose Antonio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ingsi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -601,6 +667,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "System.Net.Http.Json": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
           "VueCliMiddleware": {
             "target": "Package",
             "version": "[3.0.0, )"
@@ -624,7 +694,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

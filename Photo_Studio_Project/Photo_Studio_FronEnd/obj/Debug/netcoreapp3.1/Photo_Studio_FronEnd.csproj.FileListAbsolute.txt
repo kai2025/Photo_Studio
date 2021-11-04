@@ -10,6 +10,8 @@ C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\Photo_Stud
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\Photo_Studio_FronEnd\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.dll
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\Photo_Studio_FronEnd\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.Extensions.dll
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\Photo_Studio_FronEnd\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\Photo_Studio_FronEnd\bin\Debug\netcoreapp3.1\System.Net.Http.Json.dll
+C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\Photo_Studio_FronEnd\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\Photo_Studio_FronEnd\bin\Debug\netcoreapp3.1\VueCliMiddleware.dll
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\Photo_Studio_FronEnd\obj\Debug\netcoreapp3.1\Photo_Studio_FronEnd.csproj.AssemblyReference.cache
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\Photo_Studio_FronEnd\obj\Debug\netcoreapp3.1\Photo_Studio_FronEnd.GeneratedMSBuildEditorConfig.editorconfig

@@ -42,7 +42,7 @@ namespace Photo_StudioAPI.Controllers
         }
 
         // PUT: api/EstadosSesiones/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // To protect from overposting attacks, see http://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEstadoSesion(int id, EstadoSesion estadoSesion)
         {
@@ -73,7 +73,7 @@ namespace Photo_StudioAPI.Controllers
         }
 
         // POST: api/EstadosSesiones
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // To protect from overposting attacks, see http://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<EstadoSesion>> PostEstadoSesion(EstadoSesion estadoSesion)
         {
