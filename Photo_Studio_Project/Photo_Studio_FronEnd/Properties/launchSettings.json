@@ -19,7 +19,7 @@
     "Photo_Studio_FronEnd": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "usuarios",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

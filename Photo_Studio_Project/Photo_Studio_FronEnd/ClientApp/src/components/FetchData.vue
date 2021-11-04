@@ -1,25 +1,23 @@
 <template>
-    <h1 id="tableLabel">Weather forecast</h1>
+    <h1 id="tableLabel">Usuarios</h1>
 
     <p>This component demonstrates fetching data from the server.</p>
 
-    <p v-if="!forecasts"><em>Loading...</em></p>
+    <p v-if="!usuarios"><em>Loading...</em></p>
 
-    <table class='table table-striped' aria-labelledby="tableLabel" v-if="forecasts">
+    <table class='table table-striped' aria-labelledby="tableLabel" v-if="usuarios">
         <thead>
             <tr>
-                <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
-                <th>Summary</th>
+                <th>ID</th>
+                <th>Nombre Completo</th>
+                <th>Correo Electronico</th>
             </tr>
         </thead>
         <tbody>
-            <tr v-for="forecast of forecasts" v-bind:key="forecast">
-                <td>{{ forecast.date }}</td>
-                <td>{{ forecast.temperatureC }}</td>
-                <td>{{ forecast.temperatureF }}</td>
-                <td>{{ forecast.summary }}</td>
+            <tr v-for="user of usuarios" v-bind:key="user">
+                <td>{{ user.ID_User }}</td>
+                <td>{{ user.Nombre }}</td>
+                <td>{{ user.Email }}</td>
             </tr>
         </tbody>
     </table>
@@ -27,19 +25,23 @@
 
 
 <script>
+    const variables = {
+        BaseUrl: "https://localhost:44346/api/"
+    }
+
     import axios from 'axios'
     export default {
         name: "FetchData",
         data() {
             return {
-                forecasts: []
+                usuarios: []
             }
         },
         methods: {
-            getWeatherForecasts() {
-                axios.get('/weatherforecast')
+            getData() {
+                axios.get(variables.BaseUrl+ 'api/usuarios')
                     .then((response) => {
-                        this.forecasts =  response.data;
+                        this.usuarios =  response.data;
                     })
                     .catch(function (error) {
                         alert(error);
@@ -47,7 +49,8 @@
             }
         },
         mounted() {
-            this.getWeatherForecasts();
+            this.getData();
         }
     }
+
 </script>

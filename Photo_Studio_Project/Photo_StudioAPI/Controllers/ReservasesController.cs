@@ -42,7 +42,7 @@ namespace Photo_StudioAPI.Controllers
         }
 
         // PUT: api/Reservases/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // To protect from overposting attacks, see http://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutReserva(int id, Reserva reserva)
         {
@@ -73,7 +73,7 @@ namespace Photo_StudioAPI.Controllers
         }
 
         // POST: api/Reservases
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // To protect from overposting attacks, see http://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Reserva>> PostReserva(Reserva reserva)
         {
