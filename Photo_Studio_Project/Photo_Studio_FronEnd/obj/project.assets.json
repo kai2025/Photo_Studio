@@ -563,19 +563,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ingsi\\.nuget\\packages\\": {}
+    "C:\\Users\\Jose Antonio\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ingsi\\Source\\Repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj",
+      "projectUniqueName": "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj",
       "projectName": "Photo_Studio_FronEnd",
-      "projectPath": "C:\\Users\\ingsi\\Source\\Repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj",
-      "packagesPath": "C:\\Users\\ingsi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ingsi\\Source\\Repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\Photo_Studio_FronEnd\\obj\\",
+      "projectPath": "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\Photo_Studio_FronEnd.csproj",
+      "packagesPath": "C:\\Users\\Jose Antonio\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jose Antonio\\Source\\Repos\\Photo_Studio3\\Photo_Studio_Project\\Photo_Studio_FronEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ingsi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jose Antonio\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -624,7 +624,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
