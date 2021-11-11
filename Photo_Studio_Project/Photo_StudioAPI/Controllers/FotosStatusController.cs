@@ -11,47 +11,47 @@ namespace Photo_StudioAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuariosController : ControllerBase
+    public class FotosStatusController : ControllerBase
     {
         private readonly PhotoStudioDbContext _context;
 
-        public UsuariosController(PhotoStudioDbContext context)
+        public FotosStatusController(PhotoStudioDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Usuarios
+        // GET: api/FotosStatus
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
+        public async Task<ActionResult<IEnumerable<FotosStatus>>> GetFotosStatuses()
         {
-            return await _context.Usuarios.ToListAsync();
+            return await _context.FotosStatuses.ToListAsync();
         }
 
-        // GET: api/Usuarios/5
+        // GET: api/FotosStatus/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Usuario>> GetUsuario(int id)
+        public async Task<ActionResult<FotosStatus>> GetFotosStatus(int id)
         {
-            var usuario = await _context.Usuarios.FindAsync(id);
+            var fotosStatus = await _context.FotosStatuses.FindAsync(id);
 
-            if (usuario == null)
+            if (fotosStatus == null)
             {
                 return NotFound();
             }
 
-            return usuario;
+            return fotosStatus;
         }
 
-        // PUT: api/Usuarios/5
+        // PUT: api/FotosStatus/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUsuario(int id, Usuario usuario)
+        public async Task<IActionResult> PutFotosStatus(int id, FotosStatus fotosStatus)
         {
-            if (id != usuario.IdUser)
+            if (id != fotosStatus.IdStatus)
             {
                 return BadRequest();
             }
 
-            _context.Entry(usuario).State = EntityState.Modified;
+            _context.Entry(fotosStatus).State = EntityState.Modified;
 
             try
             {
@@ -59,7 +59,7 @@ namespace Photo_StudioAPI.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!UsuarioExists(id))
+                if (!FotosStatusExists(id))
                 {
                     return NotFound();
                 }
@@ -72,36 +72,36 @@ namespace Photo_StudioAPI.Controllers
             return NoContent();
         }
 
-        // POST: api/Usuarios
+        // POST: api/FotosStatus
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
+        public async Task<ActionResult<FotosStatus>> PostFotosStatus(FotosStatus fotosStatus)
         {
-            _context.Usuarios.Add(usuario);
+            _context.FotosStatuses.Add(fotosStatus);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUsuario", new { id = usuario.IdUser }, usuario);
+            return CreatedAtAction("GetFotosStatus", new { id = fotosStatus.IdStatus }, fotosStatus);
         }
 
-        // DELETE: api/Usuarios/5
+        // DELETE: api/FotosStatus/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUsuario(int id)
+        public async Task<IActionResult> DeleteFotosStatus(int id)
         {
-            var usuario = await _context.Usuarios.FindAsync(id);
-            if (usuario == null)
+            var fotosStatus = await _context.FotosStatuses.FindAsync(id);
+            if (fotosStatus == null)
             {
                 return NotFound();
             }
 
-            _context.Usuarios.Remove(usuario);
+            _context.FotosStatuses.Remove(fotosStatus);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool UsuarioExists(int id)
+        private bool FotosStatusExists(int id)
         {
-            return _context.Usuarios.Any(e => e.IdUser == id);
+            return _context.FotosStatuses.Any(e => e.IdStatus == id);
         }
     }
 }

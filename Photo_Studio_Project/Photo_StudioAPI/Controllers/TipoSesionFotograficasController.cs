@@ -42,7 +42,7 @@ namespace Photo_StudioAPI.Controllers
         }
 
         // PUT: api/TipoSesionFotograficas/5
-        // To protect from overposting attacks, see http://go.microsoft.com/fwlink/?linkid=2123754
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTipoSesionFotografica(int id, TipoSesionFotografica tipoSesionFotografica)
         {
@@ -73,7 +73,7 @@ namespace Photo_StudioAPI.Controllers
         }
 
         // POST: api/TipoSesionFotograficas
-        // To protect from overposting attacks, see http://go.microsoft.com/fwlink/?linkid=2123754
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<TipoSesionFotografica>> PostTipoSesionFotografica(TipoSesionFotografica tipoSesionFotografica)
         {

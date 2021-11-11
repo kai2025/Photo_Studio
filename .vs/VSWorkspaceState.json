@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Photo_Studio_Project",
-    "\\Photo_Studio_Project\\Photo_StudioAPI",
-    "\\Photo_Studio_Project\\Photo_Studio_FronEnd"
+    ""
   ],
-  "SelectedNode": "\\Photo_Studio_Project\\Photo_StudioAPI\\Photo_StudioAPI.sln",
+  "SelectedNode": "\\Photo_StudioAPI.sln",
   "PreviewInSolutionExplorer": false
 }

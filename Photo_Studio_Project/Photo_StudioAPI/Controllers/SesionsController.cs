@@ -11,47 +11,47 @@ namespace Photo_StudioAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuariosController : ControllerBase
+    public class SesionsController : ControllerBase
     {
         private readonly PhotoStudioDbContext _context;
 
-        public UsuariosController(PhotoStudioDbContext context)
+        public SesionsController(PhotoStudioDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Usuarios
+        // GET: api/Sesions
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
+        public async Task<ActionResult<IEnumerable<Sesion>>> GetSesions()
         {
-            return await _context.Usuarios.ToListAsync();
+            return await _context.Sesions.ToListAsync();
         }
 
-        // GET: api/Usuarios/5
+        // GET: api/Sesions/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Usuario>> GetUsuario(int id)
+        public async Task<ActionResult<Sesion>> GetSesion(int id)
         {
-            var usuario = await _context.Usuarios.FindAsync(id);
+            var sesion = await _context.Sesions.FindAsync(id);
 
-            if (usuario == null)
+            if (sesion == null)
             {
                 return NotFound();
             }
 
-            return usuario;
+            return sesion;
         }
 
-        // PUT: api/Usuarios/5
+        // PUT: api/Sesions/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUsuario(int id, Usuario usuario)
+        public async Task<IActionResult> PutSesion(int id, Sesion sesion)
         {
-            if (id != usuario.IdUser)
+            if (id != sesion.IdSesion)
             {
                 return BadRequest();
             }
 
-            _context.Entry(usuario).State = EntityState.Modified;
+            _context.Entry(sesion).State = EntityState.Modified;
 
             try
             {
@@ -59,7 +59,7 @@ namespace Photo_StudioAPI.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!UsuarioExists(id))
+                if (!SesionExists(id))
                 {
                     return NotFound();
                 }
@@ -72,36 +72,36 @@ namespace Photo_StudioAPI.Controllers
             return NoContent();
         }
 
-        // POST: api/Usuarios
+        // POST: api/Sesions
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
+        public async Task<ActionResult<Sesion>> PostSesion(Sesion sesion)
         {
-            _context.Usuarios.Add(usuario);
+            _context.Sesions.Add(sesion);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUsuario", new { id = usuario.IdUser }, usuario);
+            return CreatedAtAction("GetSesion", new { id = sesion.IdSesion }, sesion);
         }
 
-        // DELETE: api/Usuarios/5
+        // DELETE: api/Sesions/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUsuario(int id)
+        public async Task<IActionResult> DeleteSesion(int id)
         {
-            var usuario = await _context.Usuarios.FindAsync(id);
-            if (usuario == null)
+            var sesion = await _context.Sesions.FindAsync(id);
+            if (sesion == null)
             {
                 return NotFound();
             }
 
-            _context.Usuarios.Remove(usuario);
+            _context.Sesions.Remove(sesion);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool UsuarioExists(int id)
+        private bool SesionExists(int id)
         {
-            return _context.Usuarios.Any(e => e.IdUser == id);
+            return _context.Sesions.Any(e => e.IdSesion == id);
         }
     }
 }
