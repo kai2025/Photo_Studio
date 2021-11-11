@@ -11,47 +11,47 @@ namespace Photo_StudioAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuariosController : ControllerBase
+    public class EstadoSesionsController : ControllerBase
     {
         private readonly PhotoStudioDbContext _context;
 
-        public UsuariosController(PhotoStudioDbContext context)
+        public EstadoSesionsController(PhotoStudioDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Usuarios
+        // GET: api/EstadoSesions
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
+        public async Task<ActionResult<IEnumerable<EstadoSesion>>> GetEstadoSesions()
         {
-            return await _context.Usuarios.ToListAsync();
+            return await _context.EstadoSesions.ToListAsync();
         }
 
-        // GET: api/Usuarios/5
+        // GET: api/EstadoSesions/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Usuario>> GetUsuario(int id)
+        public async Task<ActionResult<EstadoSesion>> GetEstadoSesion(int id)
         {
-            var usuario = await _context.Usuarios.FindAsync(id);
+            var estadoSesion = await _context.EstadoSesions.FindAsync(id);
 
-            if (usuario == null)
+            if (estadoSesion == null)
             {
                 return NotFound();
             }
 
-            return usuario;
+            return estadoSesion;
         }
 
-        // PUT: api/Usuarios/5
+        // PUT: api/EstadoSesions/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUsuario(int id, Usuario usuario)
+        public async Task<IActionResult> PutEstadoSesion(int id, EstadoSesion estadoSesion)
         {
-            if (id != usuario.IdUser)
+            if (id != estadoSesion.IdStatus)
             {
                 return BadRequest();
             }
 
-            _context.Entry(usuario).State = EntityState.Modified;
+            _context.Entry(estadoSesion).State = EntityState.Modified;
 
             try
             {
@@ -59,7 +59,7 @@ namespace Photo_StudioAPI.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!UsuarioExists(id))
+                if (!EstadoSesionExists(id))
                 {
                     return NotFound();
                 }
@@ -72,36 +72,36 @@ namespace Photo_StudioAPI.Controllers
             return NoContent();
         }
 
-        // POST: api/Usuarios
+        // POST: api/EstadoSesions
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
+        public async Task<ActionResult<EstadoSesion>> PostEstadoSesion(EstadoSesion estadoSesion)
         {
-            _context.Usuarios.Add(usuario);
+            _context.EstadoSesions.Add(estadoSesion);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUsuario", new { id = usuario.IdUser }, usuario);
+            return CreatedAtAction("GetEstadoSesion", new { id = estadoSesion.IdStatus }, estadoSesion);
         }
 
-        // DELETE: api/Usuarios/5
+        // DELETE: api/EstadoSesions/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUsuario(int id)
+        public async Task<IActionResult> DeleteEstadoSesion(int id)
         {
-            var usuario = await _context.Usuarios.FindAsync(id);
-            if (usuario == null)
+            var estadoSesion = await _context.EstadoSesions.FindAsync(id);
+            if (estadoSesion == null)
             {
                 return NotFound();
             }
 
-            _context.Usuarios.Remove(usuario);
+            _context.EstadoSesions.Remove(estadoSesion);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool UsuarioExists(int id)
+        private bool EstadoSesionExists(int id)
         {
-            return _context.Usuarios.Any(e => e.IdUser == id);
+            return _context.EstadoSesions.Any(e => e.IdStatus == id);
         }
     }
 }

@@ -23,6 +23,7 @@ namespace Photo_StudioAPI.Models
         [Column("Descripción_Sesion")]
         [StringLength(100)]
         public string DescripciónSesion { get; set; }
+        public int? Costo { get; set; }
 
         [InverseProperty(nameof(Reserva.TipoSesionNavigation))]
         public virtual ICollection<Reserva> Reservas { get; set; }

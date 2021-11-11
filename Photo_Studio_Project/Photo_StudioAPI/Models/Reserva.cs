@@ -24,8 +24,6 @@ namespace Photo_StudioAPI.Models
         public int UserId { get; set; }
         [Column("Fecha_Hora", TypeName = "datetime")]
         public DateTime FechaHora { get; set; }
-        [Column(TypeName = "numeric(6, 2)")]
-        public decimal Costo { get; set; }
         [Column("Tipo_Sesion")]
         public int TipoSesion { get; set; }
         [Column("Rev_status")]

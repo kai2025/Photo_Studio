@@ -11,47 +11,47 @@ namespace Photo_StudioAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuariosController : ControllerBase
+    public class ReservasController : ControllerBase
     {
         private readonly PhotoStudioDbContext _context;
 
-        public UsuariosController(PhotoStudioDbContext context)
+        public ReservasController(PhotoStudioDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Usuarios
+        // GET: api/Reservas
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
+        public async Task<ActionResult<IEnumerable<Reserva>>> GetReservas()
         {
-            return await _context.Usuarios.ToListAsync();
+            return await _context.Reservas.ToListAsync();
         }
 
-        // GET: api/Usuarios/5
+        // GET: api/Reservas/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Usuario>> GetUsuario(int id)
+        public async Task<ActionResult<Reserva>> GetReserva(int id)
         {
-            var usuario = await _context.Usuarios.FindAsync(id);
+            var reserva = await _context.Reservas.FindAsync(id);
 
-            if (usuario == null)
+            if (reserva == null)
             {
                 return NotFound();
             }
 
-            return usuario;
+            return reserva;
         }
 
-        // PUT: api/Usuarios/5
+        // PUT: api/Reservas/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUsuario(int id, Usuario usuario)
+        public async Task<IActionResult> PutReserva(int id, Reserva reserva)
         {
-            if (id != usuario.IdUser)
+            if (id != reserva.IdReserva)
             {
                 return BadRequest();
             }
 
-            _context.Entry(usuario).State = EntityState.Modified;
+            _context.Entry(reserva).State = EntityState.Modified;
 
             try
             {
@@ -59,7 +59,7 @@ namespace Photo_StudioAPI.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!UsuarioExists(id))
+                if (!ReservaExists(id))
                 {
                     return NotFound();
                 }
@@ -72,36 +72,36 @@ namespace Photo_StudioAPI.Controllers
             return NoContent();
         }
 
-        // POST: api/Usuarios
+        // POST: api/Reservas
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
+        public async Task<ActionResult<Reserva>> PostReserva(Reserva reserva)
         {
-            _context.Usuarios.Add(usuario);
+            _context.Reservas.Add(reserva);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUsuario", new { id = usuario.IdUser }, usuario);
+            return CreatedAtAction("GetReserva", new { id = reserva.IdReserva }, reserva);
         }
 
-        // DELETE: api/Usuarios/5
+        // DELETE: api/Reservas/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUsuario(int id)
+        public async Task<IActionResult> DeleteReserva(int id)
         {
-            var usuario = await _context.Usuarios.FindAsync(id);
-            if (usuario == null)
+            var reserva = await _context.Reservas.FindAsync(id);
+            if (reserva == null)
             {
                 return NotFound();
             }
 
-            _context.Usuarios.Remove(usuario);
+            _context.Reservas.Remove(reserva);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool UsuarioExists(int id)
+        private bool ReservaExists(int id)
         {
-            return _context.Usuarios.Any(e => e.IdUser == id);
+            return _context.Reservas.Any(e => e.IdReserva == id);
         }
     }
 }
