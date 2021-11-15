@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -78,7 +79,7 @@ namespace Photo_StudioAPI.Controllers
         public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
         {
             _context.Usuarios.Add(usuario);
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();       
 
             return CreatedAtAction("GetUsuario", new { id = usuario.IdUser }, usuario);
         }
@@ -90,7 +91,8 @@ namespace Photo_StudioAPI.Controllers
             var usuario = await _context.Usuarios.FindAsync(id);
             if (usuario == null)
             {
-                return NotFound();
+/*                String error_notfound = "No ha sido encontrado el dato que desea eliminar.";
+*/                return NotFound();
             }
 
             _context.Usuarios.Remove(usuario);
