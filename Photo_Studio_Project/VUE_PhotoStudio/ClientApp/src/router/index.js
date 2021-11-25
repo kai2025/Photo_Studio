@@ -11,7 +11,7 @@ import Contacto from "@/components/Contacto.vue";
 
 const routes = [
     {
-        path: "/",
+        path: "/Home",
         name: "Home",
         component: Home,
     },

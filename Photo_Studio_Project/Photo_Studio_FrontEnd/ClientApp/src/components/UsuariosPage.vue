@@ -1,4 +1,5 @@
 ﻿<template>
+<div>
     <h1 id="tableLabel">Usuarios</h1>
 
     <p>This component demonstrates fetching data from the server.</p>
@@ -25,6 +26,7 @@
             </tr>
         </tbody>
     </table>
+    </div>
 </template>
 
 
