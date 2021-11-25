@@ -1,7 +1,8 @@
 <template>
     <div>
 
-        <font-awesome-icon icon="fa-regular fa-coffee-pot" />
+
+
 
 
         <div>
@@ -24,8 +25,6 @@
                               :image="slide.image" />
             </vueper-slides>
         </div>
-
-
 
 
 

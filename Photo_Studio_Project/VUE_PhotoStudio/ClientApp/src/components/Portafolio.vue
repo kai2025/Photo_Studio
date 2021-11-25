@@ -1,7 +1,5 @@
 ﻿<template>
     <div>
-        <h2> Portafolio</h2>
-
         <div class="img" style="margin-top: 4%;">
             <vueper-slides ref="myVueperSlides"
                            style=" height: 1000px; width: 1540px; image-rendering: auto;"

@@ -16,5 +16,5 @@ export default {
 
 
 createApp(App)
-    .component('font-awesome-icon', FontAwesomeIcon)
+    .component('fa', FontAwesomeIcon)
         .use(router).mount('#app')
