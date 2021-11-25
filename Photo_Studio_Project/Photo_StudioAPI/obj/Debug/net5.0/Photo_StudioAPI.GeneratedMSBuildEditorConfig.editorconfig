@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = Photo_StudioAPI
-build_property.ProjectDir = C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\Photo_StudioAPI\
+build_property.ProjectDir = C:\Users\ingsi\source\repos\kai2025\Photo_Studio\Photo_Studio_Project\Photo_StudioAPI\

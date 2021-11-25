@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ingsi\\Source\\Repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\VUE_PhotoStudio\\VUE_PhotoStudio.csproj": {}
+    "C:\\Users\\ingsi\\source\\repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\VUE_PhotoStudio\\VUE_PhotoStudio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ingsi\\Source\\Repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\VUE_PhotoStudio\\VUE_PhotoStudio.csproj": {
+    "C:\\Users\\ingsi\\source\\repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\VUE_PhotoStudio\\VUE_PhotoStudio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ingsi\\Source\\Repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\VUE_PhotoStudio\\VUE_PhotoStudio.csproj",
+        "projectUniqueName": "C:\\Users\\ingsi\\source\\repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\VUE_PhotoStudio\\VUE_PhotoStudio.csproj",
         "projectName": "VUE_PhotoStudio",
-        "projectPath": "C:\\Users\\ingsi\\Source\\Repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\VUE_PhotoStudio\\VUE_PhotoStudio.csproj",
+        "projectPath": "C:\\Users\\ingsi\\source\\repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\VUE_PhotoStudio\\VUE_PhotoStudio.csproj",
         "packagesPath": "C:\\Users\\ingsi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ingsi\\Source\\Repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\VUE_PhotoStudio\\obj\\",
+        "outputPath": "C:\\Users\\ingsi\\source\\repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\VUE_PhotoStudio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ingsi\\AppData\\Roaming\\NuGet\\NuGet.Config",

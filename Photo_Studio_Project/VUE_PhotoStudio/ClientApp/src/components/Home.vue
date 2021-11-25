@@ -1,70 +1,72 @@
 <template>
     <div>
 
-        <h1>Inicio</h1>
+        <font-awesome-icon icon="fa-regular fa-coffee-pot" />
+
 
         <div>
-            <h3> Sobre nosotros</h3>
-            <p class="texto">
-                AVJ Photo Studio es una plataforma web en la que los usuarios podrán
-                realizar reservaciones de sesiones fotográficas, visualización de catálogos y
-                precios, informaciones sobre el negocio, contactos y términos y condiciones
+            <h3 style="text-align: left; margin-left: 2%; color: #440B0B; font-weight: bold; "> Sobre nosotros</h3>
+            <p class="texto" style="text-align:left; margin-top:1%; width: 1400px; margin-left: 2%">
+                AVJ Photo Studio es una plataforma web en la que los usuarios podran
+                realizar reservaciones de sesiones fotograficas, visualizacion de catalogos y
+                precios, informaciones sobre el negocio, contactos y terminos y condiciones
                 del mismo.
             </p>
         </div>
 
+        <div class="img" style="margin-top: 4%;">
+            <vueper-slides ref="myVueperSlides"
+                           style=" height: 1000px; width: 1540px; image-rendering: auto;"
+                           autoplay>
 
-        <!--<div id="carruselHome" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../assets/Portafolio/img01.jpg" />
-                </div>
-                <div class="carousel-item active">
-                    <img src="../assets/Portafolio/img02.jpg" />
-                </div>
-                <div class="carousel-item active">
-                    <img src="../assets/Portafolio/img03.jpg" />
-                </div>
-                <div class="carousel-item active">
-                    <img src="../assets/Portafolio/img04.jpg" />
-                </div>
-                <div class="carousel-item active">
-                    <img src="../assets/Portafolio/img05.jpg" />
-                </div>
-                <div class="carousel-item active">
-                    <img src="../assets/Portafolio/img06.jpg" />
-                </div>
-            </div>
-        </div>-->
+                <vueper-slide v-for="(slide, i) in slides"
+                              :key="i"
+                              :image="slide.image" />
+            </vueper-slides>
+        </div>
 
-        <ul>
-            <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener"></a></li>
-            <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener"></a></li>
-        </ul>
-        <ul>
-            <li><a href="https://vuejs.org" target="_blank" rel="noopener"></a></li>
-            <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener"></a></li>
-            <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener"></a></li>
-            <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener"></a></li>
-            <li><a href="https://news.vuejs.org" target="_blank" rel="noopener"></a></li>
-        </ul>
-        <ul>
-            <li><a href="https://router.vuejs.org" target="_blank" rel="noopener"></a></li>
-            <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener"></a></li>
-            <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener"></a></li>
-            <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"></a></li>
-            <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener"></a></li>
-        </ul>
+
+
+
+
+
+
+
+
+
+
+
 
     </div>
 
 </template>
 
 <script>
+    import { VueperSlides, VueperSlide } from 'vueperslides'
+    import 'vueperslides/dist/vueperslides.css'
+
     export default {
         name: 'Home',
+        components: { VueperSlides, VueperSlide },
+       data: () => ({
+
+            slides: [
+                {          
+                    image: require("@/assets/Portafolio/img01.jpg")
+                },
+                {
+                    image: require("@/assets/Portafolio/img02.jpg")
+                },
+                {
+                    image: require("@/assets/Portafolio/img03.jpg")
+                }              
+            ]
+        })
     }
 </script>
+
+
+  
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
@@ -85,11 +87,13 @@
     a {
         color: #42b983;
     }
+
     .img {
-        height: 500px;
-        width: 400px;
+        height: 1000px;
+        width: 1540px;
         image-rendering: auto;
     }
+
     texto {
         margin-top: 10px;
         color: #ffd43a;
@@ -99,5 +103,10 @@
         white-space: pre-wrap;
         word-spacing: 2px;
     }
-
+    sub-title {
+        text-align: left;
+        margin-left: 2%;
+        color: #ffd43a;
+        font-weight: bold;
+    }
 </style>

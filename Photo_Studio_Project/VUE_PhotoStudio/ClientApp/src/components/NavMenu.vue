@@ -1,10 +1,10 @@
 
 <template>
     <header class="no-repeat content-box;  background-size: cover ">
-        <nav class="navbar-expand-lg navbar-light bg-light justify-content-md-center" style="margin-top:0%;">
+        <nav class="navbar-expand-lg navbar-light bg-light justify-content-md-center" style="margin-top:-4%;">
             <div class="container-fluid">
-                <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav" style="color:rgb(41, 14, 14);">
-                    <ul class="navbar-nav" style="margin-right:20%">
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav" style="color: #242222;">
+                    <ul class="navbar-nav" style="margin-right:30%">
                         <b-navbar-item style="margin-right:20%">
                             <router-link class="nav-link " tag="router-link" to="/Home">Inicio</router-link>
                         </b-navbar-item>
@@ -20,7 +20,7 @@
                         <b-navbar-item style="margin-right:20%">
                             <router-link class="nav-link" tag="router-link" to="/Contacto">Contacto</router-link>
                         </b-navbar-item>
-                        <b-navbar-item style="margin-right:20%">
+                        <b-navbar-item style="margin-right:30%">
                             <router-link class="nav-link" tag="router-link" to="/Admin">Admin</router-link>
                         </b-navbar-item>
                     </ul>
@@ -56,6 +56,8 @@
         white-space: normal;
         text-align: center;
         word-break: break-all;
+        position: center;
+        color: #242222;
     }
 
     html {

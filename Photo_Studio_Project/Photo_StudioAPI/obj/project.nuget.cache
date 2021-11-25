@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pbkX0pTnAx5GsbyTU4Y0T57dSF8G23j5lofLJUwQehutwP3CwwMfgpL8v0jNhAy3UtGZsz7/9fR7K5GD25+d+w==",
+  "dgSpecHash": "brzqqDPrFEGl6Wc75mk73C1dkRa5pqhTz+/ecxOVjzF1rsG/EX8q/Nbw4v0R51aLdYzXRUapSSY4xcyJR04DmQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ingsi\\Source\\Repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\Photo_StudioAPI\\Photo_StudioAPI.csproj",
+  "projectFilePath": "C:\\Users\\ingsi\\source\\repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\Photo_StudioAPI\\Photo_StudioAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ingsi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ingsi\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
