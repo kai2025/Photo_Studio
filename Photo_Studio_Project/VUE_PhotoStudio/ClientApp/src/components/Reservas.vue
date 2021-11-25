@@ -1,97 +1,80 @@
 ﻿<template>
     <div>
-        <h4> Reserva tu sesión de fotos</h4>
- <!--       <div>
-            <div id="id_6" data-type="control_dropdown" data-qid="6" data-order="2" data-selectioncount="0" class="">
-                <div class="question-wrapper questionWrapper  false">
-                        <div class="editor-container editorHasText  " style="display: inline; width: 100%;"></div>
-                            <div class="inlineEditor big-text" placeholder="Type a question" contenteditable="false" data-gramm="false" style="width: 100%;">Tipos de sesiones</div>
-                        </div>
-                    <div class="form-input-wide" data-layout="half" style="position: relative;">
-                        <div>
-                            <select class="form-dropdown input" id="input_6" name="q6_roomType6" data-component="dropdown" style="width: 310px;">
-                                <option value="">Selecione</option>
-                                <option value="0">Fotografias de Bebes</option>
-                                <option value="1">Graduación</option>
-                                <option value="2">Alimentos</option>
-                            </select>
-                        </div>
-                        <div class="editor-container editorNoText" style="display: inline-block;">
-                            <div class="inlineEditor" placeholder="Type a sublabel" contenteditable="false" data-gramm="false"></div>
-                        </div>
+        <h4 style="margin-top:2%; color:black"> Reserva tu sesión de fotos</h4>
+
+        <div class="container" style="margin-top:2%">
+            <form>
+                <div class="row">
+                    <h4>Información</h4>
+                    <div class="input-group input-group-icon">
+                        <input type="text" placeholder="Full Name">
+                        <div class="input-icon"><i class="fa fa-user"></i></div>
+                    </div>
+                    <div class="input-group input-group-icon">
+                        <input type="email" placeholder="Email Adress">
+                        <div class="input-icon"><i class="fa fa-envelope"></i></div>
                     </div>
                 </div>
-                <div id="app_wizards" class="collabUsers-userList"></div>
-            </div>
-            <div id="id_6" data-type="control_dropdown" data-qid="6" data-order="2" data-selectioncount="0" class="form-line clearfix isNotSelected lineAlignment-Auto-Top" style="z-index: 1;" draggable="false">
-                <div class="question-wrapper questionWrapper  false">
-                    <div class="form-input-wide" data-layout="half" style="position: relative;">
-                        <input type="email" id="input_17" name="q17_email" class="form-textbox input validate[required, Email]" data-defaultvalue="" size="310" tabindex="-1" placeholder="Efectivo" data-component="email" aria-labelledby="label_17 sublabel_input_17" required="" value="" style="width: 310px;">
-                    </div>
-                </div>
-                <div id="app_wizards" class="collabUsers-userList"></div>
-            </div>
-            <div id="id_22" data-type="control_datetime" data-qid="22" data-order="3" data-selectioncount="0" class="form-line clearfix isSelected lineAlignment-Left isRequired" style="z-index: 2;">
-                <div class="question-wrapper questionWrapper  false">
-                    <div class="form-input" data-layout="full" style="position: relative;">
-                        <div data-wrapper-react="true" class="extended">
-                            <div style="display: none;">
-                                <input class="form-textbox input validate[required, limitDate]" id="month_22" name="q22_arrivalDate22[month]" type="tel" size="2" data-maxlength="2" data-age="" maxlength="2" required="" autocomplete="off" aria-labelledby="label_22 sublabel_22_month" value="04"><span class="date-separate" aria-hidden="true">&nbsp;-</span>
-                                <div class="editor-container editorHasText" style="display: inline-block;">
-                                    <div class="inlineEditor" placeholder="Type a sublabel" contenteditable="false" data-gramm="false">Month</div>
-                                </div>
-                                <input class="form-textbox input validate[required, limitDate]" id="day_22" name="q22_arrivalDate22[day]" type="tel" size="2" data-maxlength="2" data-age="" maxlength="2" required="" autocomplete="off" aria-labelledby="label_22 sublabel_22_day" value="17"><span class="date-separate" aria-hidden="true">&nbsp;-</span>
-                                <div class="editor-container editorHasText" style="display: inline-block;">
-                                    <div class="inlineEditor" placeholder="Type a sublabel" contenteditable="false" data-gramm="false">Day</div>
-                                </div>
-                                <input class="form-textbox input validate[required, limitDate]" id="year_22" name="q22_arrivalDate22[year]" type="tel" size="4" data-maxlength="4" data-age="" maxlength="4" required="" autocomplete="off" aria-labelledby="label_22 sublabel_22_year" value="2020">
-                                <div class="editor-container editorHasText" style="display: inline-block;">
-                                    <div class="inlineEditor" placeholder="Type a sublabel" contenteditable="false" data-gramm="false">Year</div>
-                                </div>
+                <div class="row">
+                    <div class="col-half">
+                        <h4>Fecha de la reserva</h4>
+                        <div class="input-group">
+                            <div class="col-third">
+                                <input type="text" placeholder="DD">
                             </div>
-                            <input class="form-textbox input validate[required, limitDate, validateLiteDate]" id="lite_mode_22" type="text" size="12" data-maxlength="12" maxlength="12" data-age="" required="" data-format="mmddyyyy" data-seperator="-" placeholder="MM-DD-YYYY" autocomplete="off" aria-labelledby="label_22" value="04-17-2020">
-                            <div class="editor-container editorNoText" style="display: inline-block;">
-                                <div class="inlineEditor" placeholder="Type a sublabel" contenteditable="false" data-gramm="false"></div>
+                            <div class="col-third">
+                                <input type="text" placeholder="MM">
                             </div>
-                            <div data-wrapper-react="true">
-                                <input class="currentTime input inputtime-dropdown form-textbox validate[required]" id="input_22_timeInput" name="q22_arrivalDate22[timeInput]" type="text" required="" placeholder="HH : MM" aria-labelledby="label_22 sublabel_22_hour" data-mask="hh:MM" data-version="v2" value="04:40"><input type="hidden" class="form-hidden-time" id="input_22_hourSelect" name="q22_arrivalDate22[hour]" value="04"><input type="hidden" class="form-hidden-time" id="input_22_minuteSelect" name="q22_arrivalDate22[min]" value="40">
-                                <div class="editor-container editorHasText" style="display: inline-block;">
-                                    <div class="big-text inlineEditor" placeholder="Type a sublabel" contenteditable="false" data-gramm="false">Hora</div>
-                                </div>
-                                <select class="time-dropdown form-dropdown validate[required]" id="input_22_ampm" name="q22_arrivalDate22[ampm]" data-component="time-ampm" required="" aria-labelledby="label_22 sublabel_22_ampm">
-                                    <option value="AM">AM</option>
-                                    <option value="PM">PM</option>
-                                </select>
-                                <label class="form-sub-label" for="input_22_ampm" id="sublabel_22_ampm" aria-hidden="false" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;">AM/PM Option</label>
+                            <div class="col-third">
+                                <input type="text" placeholder="YYYY">
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="app_wizards" class="collabUsers-userList"></div>
-            </div>
-            <div id="id_28" data-type="control_textbox" data-qid="28" data-order="4" data-selectioncount="0" class="form-line clearfix isNotSelected lineAlignment-Auto-Top" style="z-index: 1;">
-                <div class="question-wrapper questionWrapper  false">
-                    <div class="form-input-wide" data-layout="half" style="position: relative;">
-                        <input type="text" id="input_28" name="q28_flightNumber" data-type="input-textbox" class="form-textbox input" data-defaultvalue="" size="200" tabindex="-1" placeholder=" " data-component="textbox" aria-labelledby="label_28" value="" style="width: 310px;">
-                        <div class="editor-container editorNoText" style="display: inline-block;">
-                            <div class="inlineEditor" placeholder="Type a sublabel" contenteditable="false" data-gramm="false"></div>
+                    <div class="col-half">
+                        <h4>Pago</h4>
+                        <div class="input-group">
+                            <input id="pago-efectivo" type="radio" name="pago" value="efectivo" checked="checked">
+                            <label for="pago-efectivo">Efectivo</label>
+                            <input id="pago-tarjeta" type="radio" name="pago" value="tarjeta">
+                            <label for="pago-tarjeta">Tarjeta</label>
                         </div>
                     </div>
                 </div>
-                <div id="app_wizards" class="collabUsers-userList"></div>
-            </div>
-            <div id="id_2" data-type="control_button" data-qid="2" data-order="5" data-selectioncount="0" class="form-line clearfix isNotSelected lineAlignment-Center lastOne" style="z-index: 1;">
-                <div>
-                    <div class="question-wrapper questionWrapper  false">
-                        <div class="form-input-wide" data-layout="full" style="position: relative;">
-                            <div data-align="center" class="form-buttons-wrapper form-buttons-center   jsTest-button-wrapperField">
-                                <button class="button">Submit</button>
-                            </div>
+
+                <div class="row">
+                    <h4>Sesión fotográfica</h4>
+                    <div class="input-group">
+                        <select>
+                            <option> Bebés</option>
+                            <option> Boda</option>
+                            <option> Cumpleaños</option>
+                        </select>
                         </div>
                     </div>
-                </div>
-            </div>-->
+
+                    <div class="row">
+                        <h4>Terms and Conditions</h4>
+                        <div class="input-group">
+                            <input id="terms" type="checkbox">
+                            <label for="terms" style="font-size:12px; text-align:left">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+                        </div>
+                    </div>
+</form>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
 </template>
 <script>
     export default {
@@ -135,4 +118,258 @@
         text-align: left;
         font-size: 23px;
     }
+
+    /* 64ac15 */
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 1em;
+        font-size: 15px;
+        color: #b9b9b9;
+        background-color: #e3e3e3;
+    }
+
+    h4 {
+        color: #f0a500;
+    }
+
+    input,
+    input[type="radio"] + label,
+    input[type="checkbox"] + label:before,
+    select option,
+    select {
+        width: 100%;
+        padding: 1em;
+        line-height: 1.4;
+        background-color: #f9f9f9;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        -webkit-transition: 0.35s ease-in-out;
+        -moz-transition: 0.35s ease-in-out;
+        -o-transition: 0.35s ease-in-out;
+        transition: 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+    }
+
+        input:focus {
+            outline: 0;
+            border-color: #bd8200;
+        }
+
+            input:focus + .input-icon i {
+                color: #f0a500;
+            }
+
+            input:focus + .input-icon:after {
+                border-right-color: #f0a500;
+            }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+            input[type="radio"] + label,
+            select {
+                display: inline-block;
+                width: 50%;
+                text-align: center;
+                float: left;
+                border-radius: 0;
+            }
+
+                input[type="radio"] + label:first-of-type {
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                }
+
+                input[type="radio"] + label:last-of-type {
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                }
+
+                input[type="radio"] + label i {
+                    padding-right: 0.4em;
+                }
+
+                input[type="radio"]:checked + label,
+                input:checked + label:before,
+                select:focus,
+                select:active {
+                    background-color: #f0a500;
+                    color: #fff;
+                    border-color: #bd8200;
+                }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+            input[type="checkbox"] + label {
+                position: relative;
+                display: block;
+                padding-left: 1.6em;
+            }
+
+                input[type="checkbox"] + label:before {
+                    position: absolute;
+                    top: 0.2em;
+                    left: 0;
+                    display: block;
+                    width: 1em;
+                    height: 1em;
+                    padding: 0;
+                    content: "";
+                }
+
+                input[type="checkbox"] + label:after {
+                    position: absolute;
+                    top: 0.45em;
+                    left: 0.2em;
+                    font-size: 0.8em;
+                    color: #fff;
+                    opacity: 0;
+                    font-family: FontAwesome;
+                    content: "\f00c";
+                }
+
+        input:checked + label:after {
+            opacity: 1;
+        }
+
+    select {
+        height: 3.4em;
+        line-height: 2;
+    }
+
+        select:first-of-type {
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        select:last-of-type {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+
+        select:focus,
+        select:active {
+            outline: 0;
+        }
+
+        select option {
+            background-color: #f0a500;
+            color: #fff;
+        }
+
+    .input-group {
+        margin-bottom: 1em;
+        zoom: 1;
+    }
+
+        .input-group:before,
+        .input-group:after {
+            content: "";
+            display: table;
+        }
+
+        .input-group:after {
+            clear: both;
+        }
+
+    .input-group-icon {
+        position: relative;
+    }
+
+        .input-group-icon input {
+            padding-left: 4.4em;
+        }
+
+        .input-group-icon .input-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3.4em;
+            height: 3.4em;
+            line-height: 3.4em;
+            text-align: center;
+            pointer-events: none;
+        }
+
+            .input-group-icon .input-icon:after {
+                position: absolute;
+                top: 0.6em;
+                bottom: 0.6em;
+                left: 3.4em;
+                display: block;
+                border-right: 1px solid #e5e5e5;
+                content: "";
+                -webkit-transition: 0.35s ease-in-out;
+                -moz-transition: 0.35s ease-in-out;
+                -o-transition: 0.35s ease-in-out;
+                transition: 0.35s ease-in-out;
+                transition: all 0.35s ease-in-out;
+            }
+
+            .input-group-icon .input-icon i {
+                -webkit-transition: 0.35s ease-in-out;
+                -moz-transition: 0.35s ease-in-out;
+                -o-transition: 0.35s ease-in-out;
+                transition: 0.35s ease-in-out;
+                transition: all 0.35s ease-in-out;
+            }
+
+    .container {
+        max-width: 38em;
+        padding: 1em 3em 2em 3em;
+        margin: 0em auto;
+        background-color: #fff;
+        border-radius: 4.2px;
+        box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+    }
+
+    .row {
+        zoom: 1;
+    }
+
+        .row:before,
+        .row:after {
+            content: "";
+            display: table;
+        }
+
+        .row:after {
+            clear: both;
+        }
+
+    .col-half {
+        padding-right: 10px;
+        float: left;
+        width: 50%;
+    }
+
+        .col-half:last-of-type {
+            padding-right: 0;
+        }
+
+    .col-third {
+        padding-right: 10px;
+        float: left;
+        width: 33.33333333%;
+    }
+
+        .col-third:last-of-type {
+            padding-right: 0;
+        }
+
+    @media only screen and (max-width: 540px) {
+        .col-half {
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+
 </style>
