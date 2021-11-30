@@ -1,6 +1,12 @@
 <template>
+    <div>
+        <img src="../src/assets/op1.jpg" class=""/>
+        <h3></h3>
         <nav-menu></nav-menu>
         <router-view />
+
+    </div>
+    
 </template>
 
 <script>
@@ -22,7 +28,7 @@ export default {
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #313131;
-        margin-top: 60px;
+        
     }
 
     @font-face {
@@ -31,8 +37,8 @@ export default {
     }
 
     img {
-        max-width: auto;
-        height: auto;
+        max-width: 1400px;
+        height: 450px;
     }
 
 

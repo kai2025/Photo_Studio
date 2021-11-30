@@ -7,7 +7,7 @@
 
         <div>
             <h3 style="text-align: left; margin-left: 2%; color: #440B0B; font-weight: bold; "> Sobre nosotros</h3>
-            <p class="texto" style="text-align:left; margin-top:1%; width: 1400px; margin-left: 2%">
+            <p class="texto" style="text-align: left; margin-top: 1%; width: 1400px; margin-left: 2%;">
                 AVJ Photo Studio es una plataforma web en la que los usuarios podran
                 realizar reservaciones de sesiones fotograficas, visualizacion de catalogos y
                 precios, informaciones sobre el negocio, contactos y terminos y condiciones
@@ -15,21 +15,19 @@
             </p>
         </div>
 
-        <div class="img" style="margin-top: 4%;">
-            <vueper-slides ref="myVueperSlides"
-                           style=" height: 1000px; width: 1540px; image-rendering: auto;"
-                           autoplay>
+        <div>
+            <div class="img" style="margin-top: 4%;">
+                <vueper-slides ref="myVueperSlides"
+                               style=" height: 1000px; width: 1540px; image-rendering: auto;"
+                               autoplay>
 
-                <vueper-slide v-for="(slide, i) in slides"
-                              :key="i"
-                              :image="slide.image" />
-            </vueper-slides>
+                    <vueper-slide v-for="(slide, i) in slides"
+                                  :key="i"
+                                  :image="slide.image" />
+                </vueper-slides>
+            </div>
+            <button class="btn" href="Portafolio.vue">Ver mas</button>
         </div>
-
-
-
-
-
 
 
 
@@ -108,4 +106,19 @@
         color: #ffd43a;
         font-weight: bold;
     }
+    .btn {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #663A3A;
+        font-size: 17px;
+        background: #E8E8E8;
+        padding: 10px 20px 10px 20px;
+        position:relative;
+    }
+
+        .btn:hover {
+            background: #848383;
+            color: #FFE751;
+        }
 </style>

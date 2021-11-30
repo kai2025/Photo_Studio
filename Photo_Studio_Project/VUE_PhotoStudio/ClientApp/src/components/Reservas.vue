@@ -2,79 +2,92 @@
     <div>
         <h4 style="margin-top:2%; color:black"> Reserva tu sesión de fotos</h4>
 
-        <div class="container" style="margin-top:2%">
-            <form>
-                <div class="row">
-                    <h4>Información</h4>
-                    <div class="input-group input-group-icon">
-                        <input type="text" placeholder="Full Name">
-                        <div class="input-icon"><i class="fa fa-user"></i></div>
-                    </div>
-                    <div class="input-group input-group-icon">
-                        <input type="email" placeholder="Email Adress">
-                        <div class="input-icon"><i class="fa fa-envelope"></i></div>
+        <div>
+            <div class="row">
+                <div class="col-half">
+                    <img src="../../src/assets/stuido_reservas.jpg" style="width: 500px; height: 600px;  margin-top:2%;" />
+                </div>
+                <div class="col-half">
+                    <div class="container" style="margin-top:2%; margin-right:10px;">
+                        <form>
+                            <div class="row">
+                                <h4>Información</h4>
+                                <div class="input-group input-group-icon">
+                                    <input type="text" placeholder="Full Name">
+                                    <div class="input-icon"><i class="fa fa-user"></i></div>
+                                </div>
+                                <div class="input-group input-group-icon">
+                                    <input type="email" placeholder="Email Adress">
+                                    <div class="input-icon"><i class="fa fa-envelope"></i></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-half">
+                                    <h4>Fecha de la reserva</h4>
+                                    <div class="input-group">
+                                        <div class="col-third">
+                                            <input type="text" placeholder="DD">
+                                        </div>
+                                        <div class="col-third">
+                                            <input type="text" placeholder="MM">
+                                        </div>
+                                        <div class="col-third">
+                                            <input type="text" placeholder="YYYY">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-half">
+                                    <h4>Pago</h4>
+                                    <div class="input-group">
+                                        <input id="pago-efectivo" type="radio" name="pago" value="efectivo" checked="checked">
+                                        <label for="pago-efectivo">Efectivo</label>
+                                        <input id="pago-tarjeta" type="radio" name="pago" value="tarjeta">
+                                        <label for="pago-tarjeta">Tarjeta</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <h4>Sesión fotográfica</h4>
+                                <div class="input-group">
+                                    <select>
+                                        <option> Bebés</option>
+                                        <option> Boda</option>
+                                        <option> Cumpleaños</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <h4>Terms and Conditions</h4>
+                                <div class="input-group">
+                                    <input id="terms" type="checkbox">
+                                    <label for="terms" style="font-size:12px; text-align:left">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+                                </div>
+                            </div>
+
+                            <button class=" button select ">
+                                Reservar
+                            </button>
+                        </form>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-half">
-                        <h4>Fecha de la reserva</h4>
-                        <div class="input-group">
-                            <div class="col-third">
-                                <input type="text" placeholder="DD">
-                            </div>
-                            <div class="col-third">
-                                <input type="text" placeholder="MM">
-                            </div>
-                            <div class="col-third">
-                                <input type="text" placeholder="YYYY">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-half">
-                        <h4>Pago</h4>
-                        <div class="input-group">
-                            <input id="pago-efectivo" type="radio" name="pago" value="efectivo" checked="checked">
-                            <label for="pago-efectivo">Efectivo</label>
-                            <input id="pago-tarjeta" type="radio" name="pago" value="tarjeta">
-                            <label for="pago-tarjeta">Tarjeta</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <h4>Sesión fotográfica</h4>
-                    <div class="input-group">
-                        <select>
-                            <option> Bebés</option>
-                            <option> Boda</option>
-                            <option> Cumpleaños</option>
-                        </select>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <h4>Terms and Conditions</h4>
-                        <div class="input-group">
-                            <input id="terms" type="checkbox">
-                            <label for="terms" style="font-size:12px; text-align:left">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
-                        </div>
-                    </div>
-</form>
+            </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </template>
 <script>
     export default {
@@ -106,11 +119,12 @@
     }
 
     .button {
-        background: #4f4f4f;
+        color: black;
+        background-color: #f0a500;
         border-radius: 5px;
-        color: #ffd43a;
         font-size: 18px;
-        padding: 10px 15px 10px 15px;
+        padding: 10px 20px 10px 20px;
+        border: 1px solid #f0a500;
     }
 
     big-text {
