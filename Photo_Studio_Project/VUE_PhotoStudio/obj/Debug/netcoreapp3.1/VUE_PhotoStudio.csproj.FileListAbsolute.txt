@@ -13,7 +13,6 @@ C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\VUE_PhotoS
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\VUE_PhotoStudio\bin\Debug\netcoreapp3.1\System.Net.Http.Json.dll
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\VUE_PhotoStudio\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\VUE_PhotoStudio\bin\Debug\netcoreapp3.1\VueCliMiddleware.dll
-C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\VUE_PhotoStudio\obj\Debug\netcoreapp3.1\VUE_PhotoStudio.csproj.AssemblyReference.cache
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\VUE_PhotoStudio\obj\Debug\netcoreapp3.1\VUE_PhotoStudio.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\VUE_PhotoStudio\obj\Debug\netcoreapp3.1\VUE_PhotoStudio.AssemblyInfoInputs.cache
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\VUE_PhotoStudio\obj\Debug\netcoreapp3.1\VUE_PhotoStudio.AssemblyInfo.cs
@@ -28,3 +27,4 @@ C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\VUE_PhotoS
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\VUE_PhotoStudio\obj\Debug\netcoreapp3.1\VUE_PhotoStudio.dll
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\VUE_PhotoStudio\obj\Debug\netcoreapp3.1\VUE_PhotoStudio.pdb
 C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\VUE_PhotoStudio\obj\Debug\netcoreapp3.1\VUE_PhotoStudio.genruntimeconfig.cache
+C:\Users\ingsi\Source\Repos\kai2025\Photo_Studio\Photo_Studio_Project\VUE_PhotoStudio\obj\Debug\netcoreapp3.1\VUE_PhotoStudio.csproj.AssemblyReference.cache

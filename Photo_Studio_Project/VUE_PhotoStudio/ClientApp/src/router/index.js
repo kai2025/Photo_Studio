@@ -6,6 +6,8 @@ import Portafolio from "@/components/Portafolio.vue";
 import Reservas from "@/components/Reservas.vue";
 import Admin from "@/components/Admin.vue";
 import Contacto from "@/components/Contacto.vue";
+import Footer from "@/components/Footer.vue";
+
 
 
 const routes = [
@@ -44,7 +46,13 @@ const routes = [
         path: "/Contacto",
         name: "Contacto",
         component: Contacto,
+    },
+    {
+        path: "/Footer",
+        name: "Footer",
+        component: Footer,
     }
+
 
 
 ];

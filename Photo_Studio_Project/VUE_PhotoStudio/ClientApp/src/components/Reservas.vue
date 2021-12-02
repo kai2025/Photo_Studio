@@ -5,10 +5,10 @@
         <div>
             <div class="row">
                 <div class="col-half">
-                    <img src="../../src/assets/stuido_reservas.jpg" style="width: 500px; height: 600px;  margin-top:2%;" />
+                    <img src="../../src/assets/stuido_reservas.jpg" style="width: 500px; height: 600px; margin-top: 5%;" />
                 </div>
                 <div class="col-half">
-                    <div class="container" style="margin-top:2%; margin-right:10px;">
+                    <div class="container" style="margin-top:2%; margin-left:-30px;">
                         <form>
                             <div class="row">
                                 <h4>Información</h4>

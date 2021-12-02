@@ -1,13 +1,9 @@
 <template>
-    <div>
-
-
-
-
+    <div class="container" style="position: static;">
 
         <div>
-            <h3 style="text-align: left; margin-left: 2%; color: #440B0B; font-weight: bold; "> Sobre nosotros</h3>
-            <p class="texto" style="text-align: left; margin-top: 1%; width: 1400px; margin-left: 2%;">
+            <h3 style="text-align: left; ; color: #440B0B; font-weight: bold; "> Sobre nosotros</h3>
+            <p class="texto" style="text-align: left; margin-top: 1%; width: 1400px;">
                 AVJ Photo Studio es una plataforma web en la que los usuarios podran
                 realizar reservaciones de sesiones fotograficas, visualizacion de catalogos y
                 precios, informaciones sobre el negocio, contactos y terminos y condiciones
@@ -18,7 +14,7 @@
         <div>
             <div class="img" style="margin-top: 4%;">
                 <vueper-slides ref="myVueperSlides"
-                               style=" height: 1000px; width: 1540px; image-rendering: auto;"
+                               style=" height: auto; width: auto; image-rendering:auto"
                                autoplay>
 
                     <vueper-slide v-for="(slide, i) in slides"
@@ -49,14 +45,20 @@
 
             slides: [
                 {          
-                    image: require("@/assets/Portafolio/img01.jpg")
+                    image: require("@/assets/Portafolio/img04.jpg")
                 },
                 {
                     image: require("@/assets/Portafolio/img02.jpg")
                 },
                 {
                     image: require("@/assets/Portafolio/img03.jpg")
-                }              
+               },
+               {
+                   image: require("@/assets/Portafolio/img05.jpg")
+               },
+               {
+                   image: require("@/assets/Portafolio/img06.jpg")
+               },
             ]
         })
     }

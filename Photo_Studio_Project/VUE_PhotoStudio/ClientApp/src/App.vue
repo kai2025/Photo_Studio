@@ -1,26 +1,26 @@
 <template>
     <div>
-        <img src="../src/assets/op1.jpg" class=""/>
+        <img src="../src/assets/op1.jpg" class="" />
         <h3></h3>
         <nav-menu></nav-menu>
         <router-view />
 
     </div>
-    
+
 </template>
 
 <script>
     import NavMenu from './components/NavMenu.vue'
 
-export default {
-  name: 'App',
-  components: {
-      NavMenu
-  }
-}
+    export default {
+        name: 'App',
+        components: {
+            NavMenu,
+        }
+    }
 </script>
 
-<style >
+<style>
     #app {
         font-family: "Merriweather", serif;
         font-size: larger;
@@ -28,7 +28,6 @@ export default {
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #313131;
-        
     }
 
     @font-face {
@@ -40,6 +39,4 @@ export default {
         max-width: 1400px;
         height: 450px;
     }
-
-
 </style>
