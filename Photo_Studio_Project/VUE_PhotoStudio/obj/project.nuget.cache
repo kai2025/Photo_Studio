@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wTT8oiBf75hH49r1DNmzrKKK3pVXH9mkVmL2pqc034OeJgPouD6EGtMgilYrmydYDctX6qbqAYI7f/BTZ0sidQ==",
+  "dgSpecHash": "n5CLPne+x3QXttya4iDR69GARhop6EdpjsQtKWkmqXswo9qjhJbM8ydHUTQMGDoVb5r/v46/MiajIZUf0dzB3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ingsi\\source\\repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\VUE_PhotoStudio\\VUE_PhotoStudio.csproj",
+  "projectFilePath": "C:\\Users\\ingsi\\Source\\Repos\\kai2025\\Photo_Studio\\Photo_Studio_Project\\VUE_PhotoStudio\\VUE_PhotoStudio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ingsi\\.nuget\\packages\\microsoft.aspnetcore.nodeservices\\3.0.0\\microsoft.aspnetcore.nodeservices.3.0.0.nupkg.sha512",
     "C:\\Users\\ingsi\\.nuget\\packages\\microsoft.aspnetcore.spaservices\\3.0.0\\microsoft.aspnetcore.spaservices.3.0.0.nupkg.sha512",

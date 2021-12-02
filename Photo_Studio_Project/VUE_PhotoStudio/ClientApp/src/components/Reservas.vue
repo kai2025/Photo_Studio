@@ -9,15 +9,15 @@
                 </div>
                 <div class="col-half">
                     <div class="container" style="margin-top:2%; margin-left:-30px;">
-                        <form>
+                        <form  @submit.prevent="sendEmail">                       
                             <div class="row">
                                 <h4>Información</h4>
                                 <div class="input-group input-group-icon">
-                                    <input type="text" placeholder="Full Name">
+                                    <input type="text" placeholder="Full Name"   v-model="name"  name="name">
                                     <div class="input-icon"><i class="fa fa-user"></i></div>
                                 </div>
                                 <div class="input-group input-group-icon">
-                                    <input type="email" placeholder="Email Adress">
+                                    <input type="email" placeholder="Email Adress" v-model="email"  name="email">
                                     <div class="input-icon"><i class="fa fa-envelope"></i></div>
                                 </div>
                             </div>
@@ -25,16 +25,17 @@
                                 <div class="col-half">
                                     <h4>Fecha de la reserva</h4>
                                     <div class="input-group">
-                                        <div class="col-third">
-                                            <input type="text" placeholder="DD">
+                                       <!-- <div class="col-third">
+                                             <input type="text" placeholder="DD" v-model="day"  name="day">
                                         </div>
                                         <div class="col-third">
-                                            <input type="text" placeholder="MM">
+                                            <input type="text" placeholder="MM" v-model="month"  name="month">
                                         </div>
                                         <div class="col-third">
-                                            <input type="text" placeholder="YYYY">
+                                            <input type="text" placeholder="YYYY" v-model="year"  name="year">
+                                        </div>-->
+                                            <input type="date" v-model="fecha" name="fecha">
                                         </div>
-                                    </div>
                                 </div>
                                 <div class="col-half">
                                     <h4>Pago</h4>
@@ -50,7 +51,7 @@
                             <div class="row">
                                 <h4>Sesión fotográfica</h4>
                                 <div class="input-group">
-                                    <select>
+                                    <select  v-model="tipo_sesion"  name="tipo_sesion">
                                         <option> Bebés</option>
                                         <option> Boda</option>
                                         <option> Cumpleaños</option>
@@ -66,9 +67,7 @@
                                 </div>
                             </div>
 
-                            <button class=" button select ">
-                                Reservar
-                            </button>
+                            <input type="submit" value="Reservar"  class="button">
                         </form>
                     </div>
                 </div>
@@ -90,11 +89,40 @@
 
 </template>
 <script>
+    import emailjs from 'emailjs-com';
+
     export default {
-        name: "HelloWorld",
-        props: {
-            msg: String,
+        name: "Reservas",
+        data() {
+            return {
+                name: '',
+                email: '',
+                fecha:'',
+                tipo_sesion: '',
+            }
         },
+        methods: {
+            sendEmail(e) {
+                try {
+                    emailjs.sendForm('avj_photostudio_mail', 'template_bcxvd3m', e.target,
+                        'user_yziGOkHIxTy9r5JL6oiJf', {
+                              name: this.name,
+                            email: this.email,
+                            fecha: this.fecha,
+                            tipo_sesion: this.tipo_sesion
+                    })
+                    console.log("El mensaje ha sido enviado, gracias por contactarnos");
+
+                } catch (error) {
+                    console.log({ error })
+                }
+                // Reset form field
+                this.name = ''
+                this.email = ''
+                this.tipo_sesion = ''
+                this.fecha = ''
+            },
+        }
     };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->

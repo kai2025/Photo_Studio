@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,6 +16,8 @@ namespace VUE_PhotoStudio
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -25,6 +28,15 @@ namespace VUE_PhotoStudio
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                                  builder =>
+                                  {
+                                      builder.WithOrigins("http://example.com",
+                                                          "http://www.contoso.com");
+                                  });
+            });
             services.AddControllers();
             services.AddSpaStaticFiles(configuration =>
             {
@@ -49,12 +61,19 @@ namespace VUE_PhotoStudio
             }
 
             app.UseRouting();
+            app.UseCors();
+
             app.UseSpaStaticFiles();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapGet("/echo",
+                context => context.Response.WriteAsync("echo"))
+                .RequireCors(MyAllowSpecificOrigins);
+
+                endpoints.MapControllers()
+                    .RequireCors(MyAllowSpecificOrigins);
             });
 
             app.UseSpa(spa =>
