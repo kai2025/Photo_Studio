@@ -31,12 +31,12 @@
     }
 
     @font-face {
-        font-family: "Merriweather", serif;
+        font-family: "Merriwether", serif;
         src: url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap') format("truetype");
     }
 
     img {
-        max-width: 1400px;
-        height: 450px;
+        max-width:1300px;
+        max-height:400px
     }
 </style>

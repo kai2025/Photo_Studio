@@ -1,33 +1,33 @@
 ﻿<template>
-    <div>
-        <h2> Contacto</h2>
-        <div class="container">
-            <form>
-                <label>Name</label>
-                <input type="text"
-                       v-model="name"
-                       name="name"
-                       placeholder="Your Name">
-                <label>Email</label>
-                <input type="email"
-                       v-model="email"
-                       name="email"
-                       placeholder="Your Email">
-                <label>Message</label>
-                <textarea name="message"
-                          v-model="message"
-                          cols="30" rows="5"
-                          placeholder="Message">
+    <div class="container">
+        <form @submit.prevent="sendEmail">
+            <label>Name</label>
+            <input type="text"
+                   v-model="name"
+                   name="name"
+                   placeholder="Your Name">
+            <label>Email</label>
+            <input type="email"
+                   v-model="email"
+                   name="email"
+                   placeholder="Your Email">
+            <label>Message</label>
+            <textarea name="message"
+                      v-model="message"
+                      cols="30" rows="5"
+                      placeholder="Message">
           </textarea>
 
-                <input type="submit" value="Send">
-            </form>
-        </div>
+            <input type="submit" value="Send">
+        </form>
     </div>
 </template>
 
+
 <script>
     import emailjs from 'emailjs-com';
+
+
     export default {
         name: 'ContactUs',
         data() {
@@ -40,12 +40,13 @@
         methods: {
             sendEmail(e) {
                 try {
-                    emailjs.sendForm('avj_photostudio_mail', 'avj_photostudio_mail', e.target,
+                    emailjs.sendForm('avj_photostudio_mail', 'template_y5rk7xa', e.target,
                         'user_yziGOkHIxTy9r5JL6oiJf', {
                         name: this.name,
                         email: this.email,
                         message: this.message
                     })
+                    console.log("El mensaje ha sido enviado, gracias por contactarnos");
 
                 } catch (error) {
                     console.log({ error })
