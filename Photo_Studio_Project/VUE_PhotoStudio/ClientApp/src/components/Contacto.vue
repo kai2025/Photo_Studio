@@ -1,5 +1,5 @@
 ﻿<template>
-    <div class="container">
+    <div class="container" style="margin-top:30px">
         <form @submit.prevent="sendEmail">
             <label>Name</label>
             <input type="text"
@@ -46,10 +46,10 @@
                         email: this.email,
                         message: this.message
                     })
-                    console.log("El mensaje ha sido enviado, gracias por contactarnos");
+                    alert("El mensaje ha sido enviado, gracias por contactarnos");
 
                 } catch (error) {
-                    console.log({ error })
+                    alert({ error })
                 }
                 // Reset form field
                 this.name = ''
