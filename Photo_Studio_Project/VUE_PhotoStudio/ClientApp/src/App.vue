@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img src="../src/assets/op1.jpg" class="" />
+        <img src="../src/assets/op1.jpg" style="width: 1600px"/>
         <h3></h3>
         <nav-menu></nav-menu>
         <router-view />
