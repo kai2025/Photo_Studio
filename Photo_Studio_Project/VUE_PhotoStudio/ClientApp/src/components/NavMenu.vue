@@ -4,17 +4,17 @@
         <nav class="navbar-expand-lg nav-opcion navbar-light bg-light justify-content-md-center" style="margin-top: -0.5%; background-color: #f2f2f2; color: #4b0202">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav" style="color: #4b0202;">
-                    <ul class="navbar-nav" style="margin-right:40%">
-                        <b-navbar-item class="active" style="margin-right:20%">
+                    <ul class="navbar-nav" style="margin-right:35%">
+                        <b-navbar-item class="active" style="margin-right:25%" >
                             <router-link class="nav-link " tag="router-link" to="/Home">Inicio</router-link>
                         </b-navbar-item>
-                        <b-navbar-item class="active" style="margin-right:20%">
+                        <b-navbar-item class="active" style="margin-right:25%" >
                             <router-link class="nav-link" tag="router-link" to="/Portafolio">Portafolio</router-link>
                         </b-navbar-item>
-                        <b-navbar-item class="active" style="margin-right:20%" >
+                        <b-navbar-item class="active" style="margin-right:25%" >
                             <router-link class="nav-link" tag="router-link" to="/Reservas">Reservas</router-link>
                         </b-navbar-item>
-                        <b-navbar-item class=" active" style="margin-right:20%">
+                        <b-navbar-item class=" active" style="margin-right:25%">
                             <router-link class="nav-link" tag="router-link" to="/Contacto">Contacto</router-link>
                         </b-navbar-item>
                         <b-navbar-item style="margin-right:30%" disabled>
